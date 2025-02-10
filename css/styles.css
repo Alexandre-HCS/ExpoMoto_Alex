@@ -1,3 +1,83 @@
+Pular para o conteúdo principal
+Google Sala de Aula
+Google Sala de Aula
+Garotos de Programa
+Início
+Agenda
+Minhas inscrições
+Pendentes
+G
+Garotos de Programa
+2
+2025_1°S_2DB_CTDEV_3°Termo
+CT NEM DEV
+1
+1DB - 2ºSemestre 2024
+Tec. DEV - NEM
+Turmas arquivadas
+Configurações
+Mural
+Atividades
+Pessoas
+Garotos de Programa
+Próximas atividades
+Nenhuma atividade para a próxima semana!
+
+Escreva um aviso para sua turma
+
+Aviso: "Figma"
+Rafael Araujo
+Criado em: 11:5811:58
+Figma
+
+ExpoMoto (mobile).pdf
+PDF
+
+ExpoMoto (desktop).pdf
+PDF
+
+ExpoMoto (identidade-visual).pdf
+PDF
+
+Adicionar comentário para a turma...
+
+Atividade: "Faça o joao largar a julia, quem conseguir é nota 100"
+Rafael Araujo postou uma nova atividade: Faça o joao largar a julia, quem conseguir é nota 100
+Criado em: 11:2611:26
+
+Aviso: "ATUALIZADO MANITOS BOLUDOS"
+Rafael Araujo
+Criado em: 11:2211:22 (editado: 11:27)
+ATUALIZADO MANITOS BOLUDOS
+
+styles.css
+CSS
+
+Adicionar comentário para a turma...
+
+
+Postada por Alexandre Silva
+Alexandre Silva
+Criado em: 10:4110:41
+https://www.figma.com/design/HijLClI0FLhEQbqPjb6e3K/Dr.-Peanut-(Copy)?node-id=2008-38&m=dev&t=2gdZrQaQTjz3ZNAc-1
+
+Adicionar comentário para a turma...
+
+
+Aviso: "Ta nas mões baitolas"
+Rafael Araujo
+Criado em: 10:3910:39 (editado: 10:42)
+Ta nas mões baitolas
+
+index.html
+HTML
+
+styles.css
+CSS
+
+Adicionar comentário para a turma...
+
+Garotos de Programa
 /* Font importada do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -30,7 +110,8 @@
     color: var(--text-color);
 }
 
-#disclaimer h2, #disclaimer .event-date {
+#disclaimer h2,
+#disclaimer .event-date {
     color: var(--primary);
 }
 
@@ -80,7 +161,8 @@
     font-weight: bold;
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
     padding: 6px 8px;
     border-radius: 5px;
     border: none;
@@ -150,6 +232,8 @@
     background-image: url("../img/hd3.jpg");
 }
 
+/* ****************** */
+
 /* Event location */
 #location {
     height: 400px;
@@ -164,7 +248,8 @@
     margin-bottom: 3em;
 }
 
-#address, #about-location {
+#address,
+#about-location {
     max-width: 30%;
 }
 
@@ -193,6 +278,8 @@
 #about-location p {
     line-height: 1.5em;
 }
+
+/* **************** */
 
 /* Event details container */
 #details {
@@ -244,6 +331,7 @@
     font-weight: bold;
 }
 
+/* **************** */
 
 /* Call to Action Section */
 #cta {
@@ -272,6 +360,8 @@
     font-size: 1.2em;
 }
 
+/* **************** */
+
 /* Footer */
 #footer {
     text-align: center;
@@ -294,4 +384,105 @@
 
 #footer span {
     font-weight: bold;
+}
+
+/* **************** */
+/* Mobile */
+@media (max-width: 450px) {
+
+    /* Event form */
+    #event-subscription {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits section */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Event location */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: 0.3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* Event details container */
+    .detail {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Call to Action Section */
+    #cta .btn {
+        width: 80%;
+    }
 }
